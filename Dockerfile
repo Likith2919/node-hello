@@ -1,5 +1,5 @@
 FROM node
-COPY . ./
+COPY . ./node-hello
 WORKDIR /node-hello
 RUN npm install
 RUN npm start
