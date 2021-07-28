@@ -1,6 +1,7 @@
 FROM node
-RUN apt install -y git
-RUN git clone https://github.com/Likith2919/node-hello.git
+COPY . ./
 WORKDIR /node-hello
 RUN npm install
 RUN npm start
+EXPOSE 3000
+CMD ["npm","start"]
